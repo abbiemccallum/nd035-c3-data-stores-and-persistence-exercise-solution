@@ -11,7 +11,7 @@
 	<groupId>com.udacity.jdnd.course3.exercise2</groupId>
 	<artifactId>lesson3-exercises</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lesson2-exercises</name>
+	<name>lesson3-exercises</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

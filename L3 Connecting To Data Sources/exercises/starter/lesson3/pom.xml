@@ -8,10 +8,10 @@
 		<version>3.3.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.udacity.jdnd.course3.exercise2</groupId>
+	<groupId>com.udacity.jdnd.course4.exercise3</groupId>
 	<artifactId>lesson3-exercises</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lesson2-exercises</name>
+	<name>lesson3-exercises</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
@@ -41,6 +41,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 
