@@ -22,12 +22,20 @@ public class Delivery {
     @Convert(converter = YesNoConverter.class)
     private Boolean completed;
 
-    //make sure to specify mappedBy. Lazy fetch optional,
-    // but often a good idea for collection attributes
-
-    // added CascadeType.REMOVE to automatically clear any associated plants when removed
+    // changed CascadeType to ALL
     @OneToMany(fetch = FetchType.LAZY, mappedBy = "delivery", cascade = CascadeType.ALL)
     private List<Plant> plants;
+
+    public Delivery(String name, String address, LocalDateTime deliveryTime) {
+        this.name = name;
+        this.address = address;
+        this.deliveryTime = deliveryTime;
+    }
+
+    public Delivery() {
+
+    }
+
 
     public Long getId() {
         return id;
